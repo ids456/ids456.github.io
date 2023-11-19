@@ -4,7 +4,7 @@
    
    <head>
        <script>
-          function calcTax()
+          function calcKW()
           {
                kW = parseFloat(document.getElementById('watts').value);
                c = parseFloat(document.getElementById('cost').value);
@@ -80,31 +80,31 @@
        
     
 
-<h3> Pre-Tax Calculation Instruction: </h3>
+<h3> kW Cost Calculation Instruction: </h3>
 <ol>
-<li>Enter Total Price in US dollars</li>
-<li>Enter applicable Sale Tax rate</li>
+<li>Enter amount of kW your A/C consumes every hour</li>
+<li>Enter electrisity cost (per kW)</li>
 <li>Press 'Calculate'</li>
-<li>Taxes and Pre-tax price will be displayed below</li>
+<li>The amount of momey you have to pay will appear on the screen</li>
 
 </ol>
 
 
 
-Formula: a = cost/(1+(percentage/100))
+Formula: a = kW * c
 <br /><br />
 
-Enter Total Cost :<br /> <input type="text" id ="cost" / >
+Enter kW value :<br /> <input type="text" id ="watts" / >
 
 <br />
 <br />
 
-Enter Tax Percantage :<br /> <input type="text" id ="percentage" / >
+Enter cost per 1 kW :<br /> <input type="text" id ="cost" / >
 
 <br />
 <br />
 
-<input type="button" value ="Calculate" onclick = "calcTax();"/  >
+<input type="button" value ="Calculate" onclick = "calcKW();"/  >
 
 <br />
 <br />
