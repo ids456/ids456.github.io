@@ -3,6 +3,22 @@
 
    
    <head>
+       <script>
+          function calcTax()
+          {
+               kW = parseFloat(document.getElementById('watts').value);
+               c = parseFloat(document.getElementById('cost').value);
+
+
+
+                 a = kW*c;
+                document.getElementById('answer').value = a1;
+               
+         }
+
+         </script> 
+
+   
     <meta charset="utf-8">
     <title> Portfolio
     </title>
@@ -52,7 +68,48 @@
       <li><a href="https://www.youtube.com/watch?v=fk3DjD9gSsk"> What is a Boiler and How does It Work?</a></li> 
     </p>
 
+ <!-- HVAC Tip -->
+    <h2>HVAC Tip</h2>
+    <p> 
+         <meta charset="utf-8">
+      Many customer undersetsimate importance of A/C maitenance. Proper maintenance ensures that air conditioning 
+       system operates at peak efficiency. Clean filters, coils, and other components allow the system to function 
+       optimally, reducing energy consumption and ultimately lowering your utility bills.
+       On average A/C unit consumes 1.2-6.5 kW per hour of power.
+       There is a formula below to calculate amount of money you will have to pay when your A/C is on.
+       
     
-    
+
+<h3> Pre-Tax Calculation Instruction: </h3>
+<ol>
+<li>Enter Total Price in US dollars</li>
+<li>Enter applicable Sale Tax rate</li>
+<li>Press 'Calculate'</li>
+<li>Taxes and Pre-tax price will be displayed below</li>
+
+</ol>
+
+
+
+Formula: a = cost/(1+(percentage/100))
+<br /><br />
+
+Enter Total Cost :<br /> <input type="text" id ="cost" / >
+
+<br />
+<br />
+
+Enter Tax Percantage :<br /> <input type="text" id ="percentage" / >
+
+<br />
+<br />
+
+<input type="button" value ="Calculate" onclick = "calcTax();"/  >
+
+<br />
+<br />
+
+       
+    </p>
   </body>
 </html>
