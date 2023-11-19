@@ -3,7 +3,7 @@
 
    
    <head>
-       <script>
+       <script type = " text/javascript">
           function calcKW()
           {
                kW = parseFloat(document.getElementById('watts').value);
@@ -12,7 +12,7 @@
 
 
                  a = kW*c;
-                document.getElementById('answer').value = a1;
+                document.getElementById('answer').value = a;
                
          }
 
@@ -110,6 +110,12 @@ Enter cost per 1 kW :<br /> <input type="text" id ="cost" / >
 <br />
 <br />
 
+Aprox. cost of work for 1 A/C hour isa
+
+<br />
+<br />
+
+<input type="text" id ="answer" / >
        
     </p>
   </body>
