@@ -1,19 +1,91 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
+
 <title>Order Form</title>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp; <img src = "hvac.jpg" width = 100 height = 100  />
-<h1>HVAC maintenance request</h1> 
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <img src = "hvac.jpg" width = 100 height = 100  />
+<h1>Online A/C maintenance request</h1> 
+
 
 <hr/>
 </p>
 
 </head>
+<body>
+     
+     <label for="HVAC system">Choose your A/C brand:</label><br>
+    <select id="ac" name="AC">
+    <option value="trane">Trane</option>
+    <option value="carrier">Carrier</option>
+    <option value="samsung">Samsung</option>
+    <option value="daikin">Daikin</option>
+    </select><br><br>
+    
+    <label for="model">Type Model number:</label><br>
+    <input type="text" id="model" ><br>
+    
+    <p>Do you know if its a heat pump:</p>
 
 
+    <input type="radio" id="yes"name="choose" >
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="choose" >
+    <label for="no">No</label><br>
+    <input type="radio" id="idk"name="choose" >
+    <label for="idk">I don't know</label><br><br>
 
+
+    <label for="maintenance">Select date of your last maitenance:</label>
+    <input type="date" id="maintenance" name="maintenance"> <br><br>
+
+    <label for="description">Brief description:</label><br>
+    <textarea id="description" style="height:80px"></textarea><br>
+
+    <h4>Contact Information</h4>
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" > &nbsp;&nbsp;
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" >&nbsp;&nbsp;  
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" >&nbsp;&nbsp;
+   
+    <label for="email">E-mail address:</label>
+    <input type="text" id="email" ><br><br>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" > &nbsp;&nbsp;
+
+    <label for="city">City:</label>
+    <input type="text" id="city" > &nbsp;&nbsp;
+
+    <label for="state">State:</label>
+    <select id="state" name="state">
+      <option value="florida">Florida</option>
+      <option value="georgia">Georgia</option>
+      <option value="alabama">Alabama</option>
+    </select> &nbsp;&nbsp;
+
+    <label for="zip">ZIP:</label>
+    <input type="text" id="zip" > &nbsp;&nbsp; 
+
+    <p>Prefered method of comunication:</p>
+
+    <input type="checkbox" id="email" name="email" >
+    <label for="email"> E-mail address</label>&nbsp;&nbsp; 
+    <input type="checkbox" id="phone" name="phone" >
+    <label for="phone"> Phone</label><br><br>
+      
+    <button type="button" onclick="alert('We received your request and we will contact you in 45 min')">Submit</button>
 
   
+
+
+
+</body>
 </html>
