@@ -1,131 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-   
-   <head>
-       <script type = " text/javascript">
-          function calcKW()
-          {
-               kW = parseFloat(document.getElementById('watts').value);
-               c = parseFloat(document.getElementById('cost').value);
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>
+      body {
+        background-image: url('background.jpg'),url('white.jpg');
+        background-position: 10%, 90%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0 10%;  
+        font-family: sans-serif;  
+            }
 
-
-
-                 a = kW*c;
-                alert ("Aprox. cost of A/C work for 1 hour is $" + a ); 
+         h1 {  
+             text-align: center;
+             justify-content: center;
+             font-family: sans-serif;
+             font-weight: bold; 
+             color: #d6d6c2;
+             text-transform: uppercase;
+             border-bottom: 3px solid #d6d6c2;
+             margin-top: 20px;
+             }
              
-                
-         }
 
-         </script> 
 
-   
-    <meta charset="utf-8">
-    <title> Portfolio
-    </title>
-      <style>
-      body {  background-color: #f2f2f2;  margin: 0 20%;  font-family: sans-serif;  }h1 {  text-align: center;  font-family: serif;  font-weight: normal; 
-      text-transform: uppercase;  border-bottom: 1px solid #57b1dc;  margin-top: 30px;}
-      h2 {  color: #d1633c;  font-size: 1em;}
-      </style>
-     <h1><img src="logo.png" alt = "logo" <br> <br> My Portfolio </h1>
-     </head>
+  .container {
+             display: flex;
+             gap: 1.625%;
+                        }
 
-    <body>
-       
-  <!-- About Section -->
-    <h2>About</h2>
-    
-    <p>  
-      <meta charset="utf-8">
-        My name is Ilya, and I am an undergraduate student at Southwestern College, Wichita KS. 
-         I started my educational journey with SW college back in 2021 and had an outstanding experience.
-         I am pursuing a degree in Computer Programming Technology and additionally working on completing all the courses
-         for Cybercrime Investigation certificate. Combined knowledge of programing and cybersecurity is vital and beneficial due to 
-         both fields heavily relying on one another. 
-    
-    </p>
+          a {
+             flex: 1;
+             text-decoration: none;
+             outline-color: transparent;
+             text-align: center;
+             line-height: 2;
+             color: black;
+             }
 
-  <!-- Programming Languages -->
-    <h2>Programming Languages</h2>
-       
-     <p> 
-         <meta charset="utf-8">
-        I have knowledge of following programming languages:
-      Swift, Java, SQL, VB.net.
-    </p>
+    a:link,
+  a:visited,
+    a:focus {
+            background: palegoldenrod;
+            color: black;
+            }
 
-       
- <!-- Current Ocupation -->
-    <h2>Current Occupations</h2>
-       
-     <p> 
-         <meta charset="utf-8">
-      Currently I work as a Heating Ventilation and Air Conditioning craftsman. My current role is to troubleshoot 
-      HVAC systems, identify issues and repair systems in a timely manner. If you would like to have better understand of HVAC,
-      please watch following YouTube video: 
-      <li><a href="https://www.youtube.com/watch?v=vJjaRTPiksA"> HVAC Overview for Beginners | What is HVAC?</a></li> 
-      <li><a href="https://www.youtube.com/watch?v=QykwWs3L1W8"> Heat Pumps Explained - How Heat Pumps Work HVAC</a></li> 
-      <li><a href="https://www.youtube.com/watch?v=fk3DjD9gSsk"> What is a Boiler and How does It Work?</a></li> 
-    </p>
+    a:hover {
+            background: #9999;
+            }
 
- <!-- HVAC Tip -->
-    <h2>HVAC Tip</h2>
-    <p> 
-         <meta charset="utf-8">
-      Many customer undersetsimate importance of A/C maitenance. Proper maintenance ensures that air conditioning 
-       system operates at peak efficiency. Clean filters, coils, and other components allow the system to function 
-       optimally, reducing energy consumption and ultimately lowering your utility bills.
-       On average A/C unit consumes 1.2-6.5 kW per hour of power.
-       There is a formula below to calculate amount of money you will have to pay when your A/C is on for an hour.
-       
-    
-<!-- Programming Languages -->
-<h2> kW Cost Calculation Instruction: </h2>
-<ol>
-   <meta charset="utf-8">
-<li>Enter amount of kW your A/C unit consumes every hour</li>
-<li>Enter electricity cost (per kW)</li>
-<li>Press 'Calculate'</li>
-<li>The cost will appear in Popup Box </li>
-
-</ol>
+   a:active {
+           background: darkred;
+          color: white;
+            }
 
 
 
-<b> Formula: result = kW * cost </b>
-<br /><br />
 
-Enter kW value from A/C's data plate :<br /> <input type="text" id ="watts" / >
 
-<br />
-<br />
+   </style>
 
-Enter cost of 1 kW :<br /> <input type="text" id ="cost" / >
+  <title> HVAC solutions</title>
+  <h1> HVAC SOLUTIONS </h1> 
+  
+ 
+</head>
 
-<br />
-<br />
 
-<input type="button" value ="Calculate" onclick = "calcKW();"/  >
 
-<br />
-<br />
-            
-    </p>
+<body>
+      <nav class = "container">                    
+            <a href = '#'> About </a>
+            <a href = '#'> How To </a>
+            <a href = '#'> Maintenance Request </a>
+            <a href = '#'> Contact </a>
+       </nav>
 
-<!-- Work Portfolio -->
-    <h2>Work Portfolio</h2>
-    
-    <p>  
-      <meta charset="utf-8">
-        During Advanced SQL course I had opportunity to create simple html page which can be used to process HVAC maintenance requests. 
-       Please see picture reference:
-       <li><a href="AC maintenance request.png"> Picture Reference.png</a></li> 
-    
-       Below is actual page example:
-       <li><a href="hvacrequest.html"> Hvac maintenace request.html</a></li> 
-    
-    </p>
-       
-  </body>
+</body>
+
+
+
 </html>
