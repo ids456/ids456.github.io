@@ -35,10 +35,25 @@
           font-size: 1em;
             }
       </style>
-    
-     </head>
 
-      <body>
+      <script type = " text/javascript">
+          function calcKW()
+          {
+               kW = parseFloat(document.getElementById('watts').value);
+               c = parseFloat(document.getElementById('cost').value);
+
+
+
+                 a = kW*c;
+                 document.getElementById('answer').value = a;
+                alert ("Aprox. cost of A/C work for 1 hour is $" + a ); 
+             
+                
+         }
+
+         </script> 
+      </head>
+ <body>
 
         <!-- HVAC Tip -->
     <h2>A/C equipment Power Consumption calculation </h2>
@@ -80,6 +95,13 @@ Enter cost of 1 kW :<br /> <input type="text" id ="cost" / >
 
 <br />
 <br />
+
+ Total:
+
+<br />
+<br />
+
+<input type="text" id ="answer" / >
             
     </p>
 
