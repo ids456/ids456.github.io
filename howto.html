@@ -44,9 +44,10 @@
                a = kW*c;
        
                document.getElementById('answer').value = a;
-               alert ("It's time to adjust your thermostat." ); 
+               if (a>1) {
+                  alert ("It's time to adjust your thermostat." ); 
              
-                
+                }
          }
 
          </script> 
@@ -94,7 +95,7 @@ Enter cost of 1 kW :<br /> <input type="text" id ="cost" / >
 <br />
 <br />
 
-Total: <br/> <input type="text" id ="answer" / >
+$/hr total:  <br/> <input type="text" id ="answer" / >
             
     </p>
 
