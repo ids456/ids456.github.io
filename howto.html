@@ -41,12 +41,10 @@
           {
                kW = parseFloat(document.getElementById('watts').value);
                c = parseFloat(document.getElementById('cost').value);
-
-
-
-                 a = kW*c;
-                 document.getElementById('answer').value = a;
-                alert ("Aprox. cost of A/C work for 1 hour is $" + a ); 
+               a = kW*c;
+       
+               document.getElementById('answer').value = a;
+               alert ("It's time to adjust your thermostat." ); 
              
                 
          }
@@ -96,12 +94,7 @@ Enter cost of 1 kW :<br /> <input type="text" id ="cost" / >
 <br />
 <br />
 
- Total:
-
-<br />
-<br />
-
-<input type="text" id ="answer" / >
+Total: <br/> <input type="text" id ="answer" / >
             
     </p>
 
