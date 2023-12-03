@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <style>
-      body {
-        background-image: url('background.jpg'),url('white.jpg');
-        background-position: 10%, 90%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        margin: 0 10%;  
-        font-family: sans-serif;  
-            }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HVAC solutions</title>
 
-         h1 {  
-             text-align: center;
-             justify-content: center;
-             font-family: sans-serif;
-             font-weight: bold;
-             font-size: 4em;
-             color: #d6d6c2;
-             text-transform: uppercase;
-             border-bottom: 3px solid #d6d6c2;
-             margin-top: 20px;
-             }
-             
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('background.jpg');
+  background-position: 10%, 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0 0%;  
+  font-family: sans-serif;
+  
+}
 
-
-  .container {
-             position: relative;
-             font-family: Arial;
-             display: flex;
-             gap: 1.625%;
-                        }
-
-          a {
-             flex: 1;
-             text-decoration: none;
-             outline-color: transparent;
-             text-align: center;
-             line-height: 2;
-             color: black;
-             }
-
-    a:link,
-  a:visited,
-    a:focus {
-            background: palegoldenrod;
-            color: black;
-            }
-
-    a:hover {
-            background: #9999;
-            }
-
-   a:active {
-           background: darkred;
-          color: white;
-            }
-
-.text-block {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  background-color: palegoldenrod;
+.header {
+  background-color: #99999953;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 0.5em;
+  font-weight: bolder;
+  
+
+}
+
+.header:hover {
+  background-color: #9999;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+}
+
+.content {
+  width: 50%;
+  color: white;
+  background-color:  rgba(238, 232, 170, 0.81);
+  border-radius: 1em 2em;
+  margin: 10px;
+  font-weight: bolder;
+}
+.content:hover {
+  background-color: #9999;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: rgba(238, 232, 170, 0.81);
+  border-radius: 2em;
+  color: #ffffff00;
+  text-align: center;
+  font-weight: bolder;
+  }
+
+.menu li:hover {
+  background-color: #9999;
+}
+
+a {
+text-decoration: none;
+color: #f3f2f2; 
 }
 
 
-
-   </style>
-
-  <title> HVAC solutions</title>
-  <h1> HVAC SOLUTIONS </h1> 
+.footer {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   
- 
+}
+
+</style>
 </head>
-
-
-
 <body>
-      <nav class = "container">                    
-            <a href = "about.html"> About </a>
-            <a href = "howto.html"> How To </a>
-            <a href = "hvacrequest.html"> Maintenance Request </a>
-            <a href = "contact.html"> Contact </a>
-       </nav>
+
+<div class="header">
+  <h1><a href="ids456.github.io">HVAC Solutions</a></h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li><a href = "about.html">About</a></li>
+      <li><a href = "howto.html">How To..</a></li>
+      <li><a href = "hvacrequest.html">Maintenance Request</a></li>
+      <li><a href = "contact.html">Contact</a></li>
+    </ul>
+  </div>
 
 
-      <div class="container">
-    <div class="text-block">
-    <h4>Introduction</h4>
-    <p>This is my portfolio web site incorporated with my primary job Heating Ventilation and Air Conditioning System</p>
- 
+
+  <div class="column content">
+    <h1>HVAC Solutions</h1>
+    <p>This is my portfolio web site incorporated with my primary job Heating Ventilation and Air Conditioning System. To read more information about me click on About.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Developer: Ilya Shuklov</p>
+</div>
+
 </body>
-
-
-
 </html>
+
+
