@@ -64,7 +64,7 @@ body {
 .menu li {
   padding: 8px;
   margin-bottom: 8px;
-  background-color: rgba(238, 232, 170, 0.81);
+  background: linear-gradient(to right, rgba(238, 232, 170, 0.959), rgba(80, 76, 27, 0.425));
   border-radius: 2em;
   color: #ffffff00;
   text-align: center;
