@@ -83,7 +83,7 @@ h2{
     
 }
 
-p{
+p, ol{
     background: linear-gradient(to right, rgba(26, 31, 1, 0.81), #e2f0a713);
     width: fit-content;
     height: fit-content;
