@@ -75,6 +75,23 @@ body {
   background-color: #9999;
 }
 
+h2{
+    background: linear-gradient(to right, rgba(238, 232, 170, 0.81), #efe45013);
+    background-blend-mode: darken;
+    border-radius:2em 0em;
+    padding-left: 5%;
+    
+}
+
+p{
+    background: linear-gradient(to right, rgba(26, 31, 1, 0.81), #e2f0a713);
+    width: fit-content;
+    height: fit-content;
+    border-radius:0em 2em;
+    padding-left: 2%;
+
+}
+
 a {
 text-decoration: none;
 color: #f3f2f2; 
