@@ -128,3 +128,19 @@ color: #f3f2f2;
 .closebtn:hover {
   color: black;
 }
+
+label {
+  display:inline-table;
+  text-align: right;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(238, 232, 170, 0.81);
+  color: white;
+  position: relative;
+}
