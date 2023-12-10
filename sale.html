@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Sale </title>
+ 
+ <link rel="stylesheet" href="cssfile.css">
+
+ <script type = " text/javascript">
+  function calc()
+  {
+       p=10;
+       q = parseFloat(document.getElementById('quantity').value);
+       
+       t = p*q;
+
+       
+       document.getElementById('total').value = t;
+
+       if (t==0) {
+        alert ("You didn't Enter any value!!! "); 
+              
+      } else if(t>=100) {
+        document.getElementById('total').value = t/2;
+        alert ("Congratulations 50% discount applied!!!");
+      
+      }else{
+        alert ("No discount is applied");
+      }
+      
+ }
+
+
+
+ </script> 
+
+</head>
+
+
+<body>
+       
+
+    <div class="header">
+        <h1>Sale</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+          <ul>
+            <li><a href = "ids456.github.io">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "howto.html">How To..</a></li>
+            <li><a href = "hvacrequest.html">Maintenance Request</a></li>
+            <li><a href = "sale.html">Sale</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+          </ul>
+        </div>
+           
+    <div class="column content">
+        
+    <h2>  
+      <meta charset="utf-8"> <br>
+        This page shows items on sale!!! <br>
+    
+    </h2>
+    <p> 
+      <meta charset="utf-8"> <br>
+    This month our item on sale is 12x6 Air Filter:
+     <br> <img src="filter.jpg" alt="1" width="250" height="180"> <br>
+     Cost is $10. When puchasing 10 or more items -- 50% discount will apply!
+ </p>
+
+
+ <p><br>  Price is automatically pre-selected.  Enter required quantity. If applicable, 50% discount will be calculated. <br>
+  <br>Formula: price * quantity 
+  <br /><br />
+
+
+ $10 x <input type="text" id ="quantity" size="1" maxlength="2"/> quantity = 
+ <input type="text" id ="total" size="1"/ > $ total cost
+
+  <br><br>
+   
+ <button type="button" value ="Calculate" onclick = "calc()" >Calculate</button>
+
+  
+</p>
+
+
+      </div>
+    </div>
+
+
+      
+        
+    <div class="footer">
+        <p>Developer: IDS456</p>
+    </div>
+  <!-- About Section -->
+  
+    
+  </body>
+</html>
