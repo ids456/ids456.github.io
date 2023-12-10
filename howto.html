@@ -48,7 +48,7 @@
     <div class="column content">
             
        <!-- HVAC Tip -->
-       <h2> kW Cost Calculating Instruction: </h2>
+       <h2> Calculate kW Consumption: </h2>
        <p> 
           <meta charset="utf-8"><br>
         Many customer undersetsimate importance of A/C maitenance. Proper maintenance ensures that air conditioning 
@@ -56,28 +56,19 @@
         optimally, reducing energy consumption and ultimately lowering your utility bills.
         Based on the size of the unit, on average A/C unit consumes 1.2-6.5 kW per hour of power.
         There is a formula below to calculate amount of money you will have to pay when your A/C is on for an hour.Detailed instruction provided below:<br><br>
-       <ol>
-            <meta charset="utf-8"><br
+       
+            <meta charset="utf-8"><br>
              <li>Enter amount of kW your A/C unit consumes every hour</li>
              <li>Enter electricity cost (per kW)</li>
              <li>Press 'Calculate'</li>
              <li>The cost will appear in Popup Box </li>
             <br>
-            </ol></p>
-     
-        <!-- kW Calculation -->
-           <ol>
-            <meta charset="utf-8"><br
-             <li>Enter amount of kW your A/C unit consumes every hour</li>
-             <li>Enter electricity cost (per kW)</li>
-             <li>Press 'Calculate'</li>
-             <li>The cost will appear in Popup Box </li>
-            <br>
-            </ol>
- 
+           
 
- 
-           <p><br>  Formula: result = kW * cost 
+          
+        </p>
+      
+           <p><br>  Formula: kW * cost 
              <br /><br />
  
            Enter kW value from A/C's data plate :<br /> <input type="text" id ="watts" / >
@@ -88,12 +79,9 @@
  
              <br />
               
-            <input type="button" value ="Calculate" onclick = "calcKW();"/  >
- 
-     <br />
-     <br />
- 
-     $/hr total:  <br/> <input type="text" id ="answer" / >
+            <button type="button" value ="Calculate" onclick = "calcKW()" >Calculate</button>
+          <br />
+            $/hr total:  <br/> <input type="text" id ="answer" / >
             <br><br>
              
      </p>
@@ -103,7 +91,7 @@
      <h2> Conduct A/C Maintenance </h2>
      <p> 
           <meta charset="utf-8"><br>
-       Below I would like to share video with common A/C maintenance tips which can help save money: 
+       This video reflects common A/C maintenance tips which will help save money: 
      
       
     <iframe width="560" height="315" src="https://www.youtube.com/embed/pBBnXHse-T0?si=6yOgCeS2fhBkwUDH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -136,4 +124,3 @@
     
   </body>
 </html>
-
